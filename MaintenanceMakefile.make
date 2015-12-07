@@ -13,6 +13,11 @@ showBlockedIps:
 
 #Bash/Ksh snippets section
 
+#miscellaneous
+#get count of most frequent words:
+# cat mobydick.txt | tr '.;,()?!:"' ' ' | tr ' ' '\n' | sed '/^[[:space:]]*$/d' | sort | uniq -c | sort -n
+
+
 #heredocs
 #$ tr a-z A-Z << EOF
 #> one two three
