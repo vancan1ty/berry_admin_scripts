@@ -57,3 +57,9 @@ showBlockedIps:
 #!, -a (AND), -o (OR), ( expression ) (PRECEDENCE)
 #or just do test 1 -e1 1 && \( test 2 -eq 2 \)
 
+#USEFUL MAINTENANCE TASKS
+#to disable remote password login on a server, make the follwign changes 
+#to the sshd_config file (/etc/ssh/sshd_config).
+#   ChallengeResponseAuthentication no
+#   PasswordAuthentication no
+#   UsePAM no
